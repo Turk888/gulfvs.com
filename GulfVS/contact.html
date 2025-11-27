@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - GulfVS</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Sora:wght@400;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header will be loaded here -->
+    <div id="header-placeholder"></div>
+
+    <!-- Hero Section -->
+    <section class="hero hero-narrow"
+        style="background-image: url('https://images.unsplash.com/photo-1423666639041-f56000c27a9a?w=1200&h=600&fit=crop');">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title" data-en="Get In Touch" data-ar="تواصل معنا">Get In Touch</h1>
+            <p class="hero-subtitle" data-en="We'd love to hear from you" data-ar="نود أن نسمع منك">We'd love to hear
+                from you</p>
+        </div>
+    </section>
+
+    <!-- Contact Content -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h2 data-en="Contact Information" data-ar="معلومات الاتصال">Contact Information</h2>
+
+                    <div class="contact-item">
+                        <h3 data-en="📍 Address" data-ar="📍 العنوان">📍 Address</h3>
+                        <p data-en="Riyadh, Saudi Arabia" data-ar="الرياض، المملكة العربية السعودية">Riyadh, Saudi
+                            Arabia</p>
+                    </div>
+
+                    <div class="contact-item">
+                        <h3 data-en="📞 Phone" data-ar="📞 الهاتف">📞 Phone</h3>
+                        <p><a href="tel:0096560230822">0096560230822</a></p>
+                    </div>
+
+                    <div class="contact-item">
+                        <h3 data-en="✉️ Email" data-ar="✉️ البريد الإلكتروني">✉️ Email</h3>
+                        <p><a href="mailto:ahsaanturk@gmail.com">ahsaanturk@gmail.com</a></p>
+                    </div>
+
+                    <div class="contact-item">
+                        <h3 data-en="🕐 Business Hours" data-ar="🕐 ساعات العمل">🕐 Business Hours</h3>
+                        <p data-en="Saturday - Thursday: 9:00 AM - 6:00 PM"
+                            data-ar="السبت - الخميس: 9:00 صباحًا - 6:00 مساءً">Saturday - Thursday: 9:00 AM - 6:00 PM
+                        </p>
+                        <p data-en="Friday: Closed" data-ar="الجمعة: مغلق">Friday: Closed</p>
+                    </div>
+                </div>
+
+                <div class="contact-form-container">
+                    <h2 data-en="Send Us a Message" data-ar="أرسل لنا رسالة">Send Us a Message</h2>
+                    <form class="contact-form" id="contactForm" name="contact" method="POST" netlify
+                        netlify-honeypot="bot-field">
+                        <input type="hidden" name="form-name" value="contact" />
+                        <div class="form-group" style="display: none;">
+                            <label>Don't fill this out: <input name="bot-field" /></label>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" class="form-input" id="name" name="name" required
+                                data-placeholder-en="Your Name" data-placeholder-ar="اسمك">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" class="form-input" id="email" name="email"
+                                required data-placeholder-en="Your Email" data-placeholder-ar="بريدك الإلكتروني">
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" placeholder="Phone Number" class="form-input" id="phone" name="phone"
+                                data-placeholder-en="Phone Number" data-placeholder-ar="رقم الهاتف">
+                        </div>
+                        <div class="form-group">
+                            <select class="form-input" id="service" name="service" required>
+                                <option value="" data-en="Select a Service" data-ar="اختر خدمة">Select a Service
+                                </option>
+                                <option value="HR Solutions" data-en="HR Solutions" data-ar="حلول الموارد البشرية">HR
+                                    Solutions</option>
+                                <option value="Financial Services" data-en="Financial Services"
+                                    data-ar="الخدمات المالية">Financial Services</option>
+                                <option value="Administration" data-en="Administration" data-ar="الإدارة">Administration
+                                </option>
+                                <option value="Other" data-en="Other" data-ar="أخرى">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" class="form-textarea" id="message" name="message"
+                                rows="5" required data-placeholder-en="Your Message"
+                                data-placeholder-ar="رسالتك"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" data-en="Send Message" data-ar="أرسل الرسالة">Send
+                            Message</button>
+                    </form>
+                    <div class="form-message" id="formMessage"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer will be loaded here -->
+    <div id="footer-placeholder"></div>
+
+    <script src="js/include-loader.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
